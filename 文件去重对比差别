@@ -1,0 +1,10 @@
+import subprocess
+
+# subprocess.run('cp /etc/passwd /tmp/mima', shell = True)
+with open('/etc/passwd') as f1:
+with open('/tmp/mima') as f2:
+    s1 = set(f1)
+    s2 = set(f2)
+    s3 = s2 - s1
+with open('/tmp/duibi.txt','w') as f3:
+    f3.writelines(s3)
