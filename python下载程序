@@ -16,3 +16,6 @@ if __name__ == '__main__':
     dest = sys.argv[2]
     download(url,dest)
 #运行Python时,后边要跟上url和存放的位置
+或者pip下载wget
+pip install wget
+wget.download('网址','存放位置')
